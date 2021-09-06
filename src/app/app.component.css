@@ -11,7 +11,7 @@ table{
     color: red;
 }
 body{
-    background-image: url("/src/assets/img.jpeg");
+    background-image: url("\src\assets\img.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

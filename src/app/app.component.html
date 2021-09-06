@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Search Your Flight</title>
-<!-- <link type="text/css" rel="stylesheet" href="myairline.css"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
-	<h1>Welcome To My AirTravel</h1>
-	<hr>
-	<h2>Search Flights</h2>
+<h1>{{title}}</h1>
+		<h1> Welcome To My AirTravel </h1><hr><h2> Search Flights </h2>
+		
+		<form action="FoundFlights.html">   
+			<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
+				<TR> <TD>Enter source city</TD> 		<TD><input type=text></TD> </TR>
+				<TR> <TD>Enter destination city</TD> 	<TD><input type=text></TD> </TR>
+				<TR> <TD>Enter date of Journey</TD> 	<TD><input type=date name=doj></TD> </TR>
+			
+				<TR> <TD><input type=submit value="Search Flights"></TD> </TR>
+			</TABLE>
+		</form>
+		<app-show-flights></app-show-flights>
+		<app-login></app-login>
+		<app-registration></app-registration>
+		<app-forgotpassword></app-forgotpassword>
+		<app-resetpassword></app-resetpassword>
 
-	<form action="FoundFlights.html">
-		<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
-			<TR>
-				<TD>Enter source city</TD>
-				<TD><input type=text></TD>
-			</TR>
-			<TR>
-				<TD>Enter destination city</TD>
-				<TD><input type=text></TD>
-			</TR>
-			<TR>
-				<TD>Enter date of Journey</TD>
-				<TD><input type=date name=doj></TD>
-			</TR>
-
-			<TR>
-				<TD><input type=submit value="Search Flights"></TD>
-			</TR>
-		</TABLE>
-	</form>
 </body>
-
 </html>
