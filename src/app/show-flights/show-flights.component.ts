@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowFlightsComponent implements OnInit {
 
+  title: string ="Showing All Flights";
+  flightNumber: number = 100;
+  flightName: string="Air India";
+  flightSource: string="Mumbai";
+  flightTarget: string ="Paris";
+
   constructor() { }
 
   ngOnInit(): void {
