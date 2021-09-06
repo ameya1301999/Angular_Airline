@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Flight } from './Flight';
 
 @Component({
   selector: 'app-show-flights',
@@ -12,6 +13,8 @@ export class ShowFlightsComponent implements OnInit {
   flightName: string="Air India";
   flightSource: string="Mumbai";
   flightTarget: string ="Paris";
+
+  flightObj: Flight = new Flight(); 
 
   constructor() { }
 
