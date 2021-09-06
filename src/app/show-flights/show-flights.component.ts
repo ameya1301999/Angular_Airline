@@ -16,6 +16,12 @@ export class ShowFlightsComponent implements OnInit {
 
   flightObj: Flight = new Flight(); 
 
+  flightList: Flight[] = [
+    {flightNumber: 100, flightName: "Luftha", flightSource: "Mumbai", flightTarget: "Germany"},
+    {flightNumber: 200, flightName: "Luftha", flightSource: "Pune", flightTarget: "London"},
+    {flightNumber: 300, flightName: "Luftha", flightSource: "Nagpur", flightTarget: "America"}, 
+    {flightNumber: 400, flightName: "Luftha", flightSource: "Delhi", flightTarget: "Tokyo"},
+  ];
   constructor() { }
 
   ngOnInit(): void {

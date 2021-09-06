@@ -17,7 +17,7 @@
     <h1>Flight Source {{flightSource}}</h1>
     <h1>Flight Destination {{flightTarget}}</h1>
 
-    <table>
+    <table border=3>
         <tr>
             <td>Flight Number</td>
             <td>{{flightObj.flightNumber}}</td>
@@ -35,6 +35,22 @@
             <td>{{flightObj.flightTarget}}</td>
         </tr>
     </table>
+
+    <table border=3>
+            <thead>
+                <td>Flight Number</td>
+                <td>Flight name</td>
+                <td>Flight Source</td>
+                <td>Flight Target</td>
+            </thead> 
+          <tr *ngFor="let flight of flightList">
+            <td>{{flight.flightNumber}}</td>    
+            <td>{{flight.flightName}}</td>
+            <td>{{flight.flightSource}}</td>
+            <td>{{flight.flightTarget}}</td>
+        </tr>
+    </table>
+
 
 
 	<form action="Login.html">
