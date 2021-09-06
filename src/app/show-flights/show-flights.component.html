@@ -38,16 +38,28 @@
 
     <table border=3>
             <thead>
-                <td>Flight Number</td>
-                <td>Flight name</td>
-                <td>Flight Source</td>
-                <td>Flight Target</td>
+                <th>Flight Number</th>
+                <th>Flight name</th>
+                <th>Flight Source</th>
+                <th>Flight Target</th>
             </thead> 
           <tr *ngFor="let flight of flightList">
             <td>{{flight.flightNumber}}</td>    
             <td>{{flight.flightName}}</td>
             <td>{{flight.flightSource}}</td>
             <td>{{flight.flightTarget}}</td>
+
+            <table border=3>
+                <thead>
+                    <th>Crew Name</th><th>Age</th><th>Designation</th>
+                </thead>
+                <tr *ngFor="let crew of flight.crewList">
+                    <td> {{crew.firstName}}</td><td> {{crew.age}}</td>
+                    <td> {{crew.designation}}</td>
+                </tr>
+            </table>
+
+            <TD><input type=submit value="Book Flight">
         </tr>
     </table>
 
