@@ -1,1 +1,65 @@
-<p>login works!</p>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<!-- <link rel="stylesheet" href="myairline.css"> -->
+</head>
+<body>
+<h1>Welcome to my class</h1>
+<hr>
+<h2>Login your account</h2>
+<script>
+	function validate(){
+		var b=true;
+		var name=document.getElementById("uname").value;
+		var pass=document.getElementById("upass").value;
+		if(name==""){
+			document.getElementById("usererrmsg").innerHTML='username cannot be blank';
+			b=false;
+		}
+		if(pass==""){
+			document.getElementById("passerrmsg").innerHTML='password cannot be blank';
+			b=false;
+		}
+		if(name.length<8){
+			document.getElementById("usererrmsg").innerHTML='user cannot be less than 8';
+			b=false;
+		}
+		if(pass.length<8){
+			document.getElementById("passerrmsg").innerHTML='password cannot be less than 8';
+			b=false;
+		}
+		return b;	
+	}
+	function clearpasserr(){
+		document.getElementById("passerrmsg").innerHTML='';
+	}
+	function clearusererr(){
+		document.getElementById("usererrmsg").innerHTML='';
+	}
+	function change(){
+		var name=document.getElementById("uname").value;
+		document.getElementById("usererrmsg").innerHTML='hello';
+	}
+	
+</script>
+<form action="UserDashboard.html">
+	<table >
+		<tr><td>Enter name<td><td><input type=text id=uname onClick="clearusererr()"/><td>
+		<span id="usererrmsg"></span></tr>
+		<tr><td>Enter password <td><td><input type=password id=upass onClick="clearpasserr()" /><td>
+		<span id="passerrmsg"></span></tr>
+		<tr><td><input type=submit value="Login" onclick="return validate()"><td></tr>
+	</table>
+</form>
+	<div id=d1>
+		<a href="FoundFlights.html">Back to Flight Booking</a><br>
+	</div>
+	<div class =d id=d1>
+		<a href="UserRegisteration.html">sign up here</a><br>
+	</div>
+	<div id=d2 class=d>
+		<a href="ForgotPassword.html">Forgot Password</a>
+	</div>
+</body>
+</html>
