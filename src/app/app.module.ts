@@ -9,6 +9,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { FormsModule } from '@angular/forms';
+import { SqrtPipe } from './sqrt.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     ShowFlightsComponent,
     RegistrationComponent,
     ForgotpasswordComponent,
-    ResetpasswordComponent
+    ResetpasswordComponent,
+    SqrtPipe
   ],
   imports: [
     BrowserModule,
