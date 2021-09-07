@@ -8,6 +8,7 @@ import { ShowFlightsComponent } from './show-flights/show-flights.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
