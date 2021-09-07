@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
 	<h1>{{title}}</h1>
 
@@ -40,7 +41,12 @@
 	<ng-template #myElseBlock>
 		its False 
 		User is not Logged In
-	</ng-template>
+	</ng-template> <br>
+
+
+	<button><label (click)="checkstatus()">{{status[current]}}</label></button> 
+	<br> 
+	<hr>
 
 	<form class="c1">   
 		<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10 style="background-color:aqua;">

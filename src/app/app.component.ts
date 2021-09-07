@@ -12,11 +12,17 @@ export class AppComponent {
   years: number = 3;
   si: number = (this.principal * this.rate * this.years)/100;
   isUserLoggedIn: boolean = true;
+  status: string[]=["Login","Logout"];
+  current: number =0;
 
   calculateSimpleInterest(){
     this.si = (this.principal * this.rate * this.years)/100;
     console.log('Calculated Simple Interest',this.si);
    
   }
+  checkstatus(){
+    this.current = (this.current+1)%2;
+  }
 
 }
+
