@@ -10,4 +10,11 @@ export class AppComponent {
   principal: number = 50000;
   rate: number = 5;
   years: number = 3;
+  si: number = (this.principal * this.rate * this.years)/100;
+
+  calculateSimpleInterest(){
+    this.si = (this.principal * this.rate * this.years)/100;
+   
+  }
+
 }
