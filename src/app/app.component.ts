@@ -11,6 +11,7 @@ export class AppComponent {
   rate: number = 5;
   years: number = 3;
   si: number = (this.principal * this.rate * this.years)/100;
+  isUserLoggedIn: boolean = true;
 
   calculateSimpleInterest(){
     this.si = (this.principal * this.rate * this.years)/100;

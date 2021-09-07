@@ -28,7 +28,50 @@
 	For a duration of {{years}} <br>
 	<hr>
 	<button (click)="calculateSimpleInterest()"> Calculate Simple Interest</button> <br><br>
-	<b><label>Calculated Simple Interest is {{si}}</label></b>
+	<b><label>Calculated Simple Interest is {{si}}</label></b> <br> <br>
+
+
+
+
+	<div *ngIf="isUserLoggedIn; else myElseBlock">
+		its true
+		Yes, User is Logged In
+	</div>
+	<ng-template #myElseBlock>
+		its False 
+		User is not Logged In
+	</ng-template>
+
+	<form class="c1">   
+		<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10 style="background-color:aqua;">
+			<th colspan="2" text-align="center"><h2> Search Flights </h2></th>
+			<TR> <TD>Enter source city</TD> 		
+			<TD>
+					<select>
+							<option value="BOM">Mumbai</option>
+							<option value="MAA">Chennai</option>
+							<option value="DEL">Delhi</option>
+							<option value="KOL">Kolkata</option>
+					</select> 
+			</TD> 
+			</TR>
+			<TR> <TD>Enter destination city</TD> 	
+		 
+			<TD>
+			
+				<select >
+							<option value="KOL">Kolkata</option>
+							<option value="DEL">Delhi</option>
+							<option value="MAA">Chennai</option>
+							<option value="MUM">Mumbai</option>
+				</select> 
+			
+			</TR>
+			<TR> <TD>Enter date of Journey</TD> 	<TD><input type=date name=doj></TD> </TR>
+		
+			<TR> <TD colspan="2" text-align="center"><input type=submit value="Search Flights"></TD> </TR>
+		</TABLE>
+	</form>
 
 		<!-- <form action="FoundFlights.html">   
 			<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
