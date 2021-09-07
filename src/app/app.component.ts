@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EMI Calculator';
+  principal: number = 50000;
+  rate: number = 5;
+  years: number = 3;
 }

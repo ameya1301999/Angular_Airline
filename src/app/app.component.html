@@ -6,11 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-<h1>{{title}}</h1>
-		<!-- <h1> Welcome To My AirTravel </h1><hr><h2> Search Flights </h2> -->
-		<label>Enter Principal Amount</label><input type="number" name="Principal"><br>
-		<label>Enter Rate of interest</label><input type="number" name="Rate"><br>
-		<label>Enter Period in years</label><input type="number" name="Years"><br>
+	<h1>{{title}}</h1>
+
+	<label> Enter Principal Amount </label><input type="number" name="prinicipal" value={{principal}}><br>
+	<label> Enter Rate Amount </label><input type="number" name="rate" value={{rate}}><br>
+	<label> Enter Duration </label><input type="number" name="years" value={{years}}><br>
+	<hr><br>
+	<label> Enter Principal Amount </label><input type="number" name="prinicipal" [(ngModel)]="principal"><br>
+	<label> Enter Rate Amount </label><input type="number" name="rate" [(ngModel)]="rate"><br>
+	<label> Enter Duration </label><input type="number" name="years" [(ngModel)]="years"><br>
+	<hr><br>
+	Principal is {{principal}}<br>
+	Rate is {{rate}}<br>
+	For a duration of {{years}}
 
 		<!-- <form action="FoundFlights.html">   
 			<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
