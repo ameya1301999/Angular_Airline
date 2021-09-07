@@ -30,6 +30,10 @@
 	<hr>
 	<button (click)="calculateSimpleInterest()"> Calculate Simple Interest</button> <br><br>
 	<b><label>Calculated Simple Interest is {{si}}</label></b> <br> <br>
+	<b><label>Calculated Simple Interest is {{si | currency: 'INR'}}</label></b> <br> <br>
+	<b><label>Calculated Simple Interest is {{si | currency: 'USD'}}</label></b> <br> <br>
+	<b><label>Calculated Simple Interest is {{si | currency: 'EUR'}}</label></b> <br> <br>
+
 
 
 
