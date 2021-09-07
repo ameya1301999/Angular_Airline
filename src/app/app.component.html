@@ -11,17 +11,17 @@
 	<label> Enter Principal Amount </label><input type="number" name="prinicipal" value={{principal}}><br>
 	<label> Enter Rate Amount </label><input type="number" name="rate" value={{rate}}><br>
 	<label> Enter Duration </label><input type="number" name="years" value={{years}}><br>
-	<hr><br>
+	<hr>
 	<label> Enter Principal Amount </label><input type="number" name="prinicipal" [(ngModel)]="principal"><br>
 	<label> Enter Rate Amount </label><input type="number" name="rate" [(ngModel)]="rate"><br>
 	<label> Enter Duration </label><input type="number" name="years" [(ngModel)]="years"><br>
-	<hr><br>
+	<hr>
 	Principal is {{principal}}<br>
 	Rate is {{rate}}<br>
 	For a duration of {{years}} <br>
 	<hr>
-	<button (click)="calculateSimpleInterest()"> Calculate Simple Interest</button> <br>
-	<label>Calculated Simple Interest is {{si}}</label>
+	<button (click)="calculateSimpleInterest()"> Calculate Simple Interest</button> <br><br>
+	<b><label>Calculated Simple Interest is {{si}}</label></b>
 
 		<!-- <form action="FoundFlights.html">   
 			<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
