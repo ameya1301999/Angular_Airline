@@ -13,9 +13,9 @@
 	<label> Enter Duration </label><input type="number" name="years" value={{years}}><br>
 	<hr>
 	<h3>With ngmodulechange and ngmodule</h3>
-	<label> Enter Principal Amount </label><input type="number" name="prinicipal"  [(ngModel)]="principal" (ngModuleChange)="calculateSimpleInterest()"><br>
-	<label> Enter Rate Amount </label><input type="number" name="rate"  [(ngModel)]="rate" (ngModuleChange)="calculateSimpleInterest()"><br>
-	<label> Enter Duration </label><input type="number" name="years"  [(ngModel)]="years" (ngModuleChange)="calculateSimpleInterest()"><br>
+	<label> Enter Principal Amount </label><input type="number" name="prinicipal"  [(ngModel)]="principal" (ngModelChange)="calculateSimpleInterest()"><br>
+	<label> Enter Rate Amount </label><input type="number" name="rate"  [(ngModel)]="rate" (ngModelChange)="calculateSimpleInterest()"><br>
+	<label> Enter Duration </label><input type="number" name="years"  [(ngModel)]="years" (ngModelChange)="calculateSimpleInterest()"><br>
 	<hr>
 	<h3>With change and ngmodule</h3>
 	<label> Enter Principal Amount </label><input type="number" name="prinicipal"  [(ngModel)]="principal" (change)="calculateSimpleInterest()"><br>
