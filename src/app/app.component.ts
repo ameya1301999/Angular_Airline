@@ -14,6 +14,7 @@ export class AppComponent {
 
   calculateSimpleInterest(){
     this.si = (this.principal * this.rate * this.years)/100;
+    console.log('Calculated Simple Interest',this.si);
    
   }
 

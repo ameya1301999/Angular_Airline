@@ -12,10 +12,17 @@
 	<label> Enter Rate Amount </label><input type="number" name="rate" value={{rate}}><br>
 	<label> Enter Duration </label><input type="number" name="years" value={{years}}><br>
 	<hr>
-	<label> Enter Principal Amount </label><input type="number" name="prinicipal" [(ngModel)]="principal"><br>
-	<label> Enter Rate Amount </label><input type="number" name="rate" [(ngModel)]="rate"><br>
-	<label> Enter Duration </label><input type="number" name="years" [(ngModel)]="years"><br>
+	<h3>With ngmodulechange and ngmodule</h3>
+	<label> Enter Principal Amount </label><input type="number" name="prinicipal"  [(ngModel)]="principal" (ngModuleChange)="calculateSimpleInterest()"><br>
+	<label> Enter Rate Amount </label><input type="number" name="rate"  [(ngModel)]="rate" (ngModuleChange)="calculateSimpleInterest()"><br>
+	<label> Enter Duration </label><input type="number" name="years"  [(ngModel)]="years" (ngModuleChange)="calculateSimpleInterest()"><br>
 	<hr>
+	<h3>With change and ngmodule</h3>
+	<label> Enter Principal Amount </label><input type="number" name="prinicipal"  [(ngModel)]="principal" (change)="calculateSimpleInterest()"><br>
+	<label> Enter Rate Amount </label><input type="number" name="rate"  [(ngModel)]="rate" (change)="calculateSimpleInterest()"><br>
+	<label> Enter Duration </label><input type="number" name="years"  [(ngModel)]="years" (change)="calculateSimpleInterest()"><br>
+	<hr>
+	
 	Principal is {{principal}}<br>
 	Rate is {{rate}}<br>
 	For a duration of {{years}} <br>
