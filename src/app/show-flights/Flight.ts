@@ -3,10 +3,10 @@ export class Flight{
     flightName: string = "Indian Airlines";
     flightSource: string = "London";
     flightTarget: string = "Germany";
-    crewList:  Crew[];
+    crewList!: Crew[];
 }
 export class Crew {
-    firstName: string;
-    age: number;
-    designation: string;
-}
+    firstName!: string;
+    age!: number;
+    designation!: string;
+};
