@@ -34,7 +34,11 @@
 	<b><label>Calculated Simple Interest is {{si | currency: 'USD'}}</label></b> <br> <br>
 	<b><label>Calculated Simple Interest is {{si | currency: 'EUR'}}</label></b> <br> <br>
 
-
+	<p>Account opening date is {{accountOpeningDate}}</p>
+	<p>Account opening date is h:mm a {{accountOpeningDate | date : 'h:mm a'}}</p>
+	<p>Account opening date is M/dd/yyyy {{accountOpeningDate | date : 'M/dd/yyyy'}}</p>
+	<p>Account opening date is shortdate {{accountOpeningDate | date : 'shortDate'}}</p>
+	<p>Account opening date is fulldate {{accountOpeningDate | date : 'fullDate'}}</p>
 
 
 

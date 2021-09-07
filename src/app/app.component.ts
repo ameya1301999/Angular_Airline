@@ -15,6 +15,8 @@ export class AppComponent {
   status: string[]=["Login","Logout"];
   current: number =0;
 
+  accountOpeningDate = new Date();
+
   calculateSimpleInterest(){
     this.si = (this.principal * this.rate * this.years)/100;
     console.log('Calculated Simple Interest',this.si);
