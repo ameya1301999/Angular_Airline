@@ -11,6 +11,8 @@
 	<h1>Welcome To My AirTravel</h1>
 	<hr>
 	<h2>Registration</h2>
+	<button (click) ="callConvert()">Convert</button>
+	<button (click) ="callCurrencyRate()">What is the Currency Rate</button>
 	<form (ngSubmit) = "onSubmit()" ngNativeValidate>   
 		<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
 			<TR> <TD>Enter username </TD> <TD><input type=text id="uname1" placeholder="Enter user name" name = "username" [(ngModel)] = "newRegistration.username" required><span id="userErrMsg1"></span></TD> </TR>

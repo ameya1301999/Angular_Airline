@@ -4,10 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CurrencyConvertorService {
-
+  constructor() {}
   convert(){
     console.log('Convert is called');
+    this.findCurrencyRate();
   }
-
-  constructor() { }
+  findCurrencyRate() {
+    console.log('Finding Currency Rate');
+  }
 }
