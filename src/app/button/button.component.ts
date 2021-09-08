@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
     <head>
     <title> LikeDislike Button</title>
     </head>
-    <body> <button class="{{b1Class}}" (click) ="goLike()">{{likeLable}} {{likeCounter}}</button> 
-    <button class={{b2Class}} (click) ="goDisLike()">{{dislikeLable}} {{dislikeCounter}}</button> 
+    <body> 
+      <button class="{{b1Class}}" (click) ="goLike()">{{likeLable}} {{likeCounter}}
+          </button> 
+      <button class={{b2Class}} (click) ="goDisLike()">{{dislikeLable}} {{dislikeCounter}}
+          </button> 
     </body> 
     </html>`,
   styles: [
@@ -44,10 +47,19 @@ export class ButtonComponent implements OnInit {
 
   goLike() {
     console.log('Like is Clicked');
+    ++this.likeCounter;
+    if(this.likeCounter > 150) {
+      this.likeCounter=100;
+    }
+
   }
 
   goDisLike() {
     console.log('Disliked is Clicked');
+    ++this.dislikeCounter;
+    if(this.dislikeCounter > 31) {
+      this.dislikeCounter=25;
+    }
   }
 
   constructor() { }
