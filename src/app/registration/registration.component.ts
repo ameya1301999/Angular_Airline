@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Registration } from './registration';
 import * as moment from 'moment';
 import { CurrencyConvertorService } from '../currency-convertor.service';
+import { ValidationService } from '../validation.service';
 
 @Component({
   selector: 'app-registration',
@@ -16,7 +17,7 @@ export class RegistrationComponent implements OnInit {
   current = '';
   flag = false;
 
-  constructor(private ccs: CurrencyConvertorService) { }
+  constructor(private ccs: CurrencyConvertorService, private vs: ValidationService) { }
   
   check(){
     this.current = moment(new Date()).format('YYYY');
@@ -54,6 +55,16 @@ export class RegistrationComponent implements OnInit {
   callConvert() {
     console.log('callConvert() of registration.component.ts is called');
      this.ccs.convert();
+  }
+
+  callfindCurr()
+  {
+    console.log('user registration currency rate');
+    this.ccs.findCurrencyRate();
+  }
+  validatForm()
+  {
+    this.vs.validateUsername(this.newRegistration.username);
   }
 
   onSubmit(){

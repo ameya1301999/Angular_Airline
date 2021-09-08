@@ -15,7 +15,7 @@
 	<button (click) ="callCurrencyRate()">What is the Currency Rate</button>
 	<form (ngSubmit) = "onSubmit()" ngNativeValidate>   
 		<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10>
-			<TR> <TD>Enter username </TD> <TD><input type=text id="uname1" placeholder="Enter user name" name = "username" [(ngModel)] = "newRegistration.username" required><span id="userErrMsg1"></span></TD> </TR>
+			<TR> <TD>Enter username </TD> <TD><input type=text id="uname1" placeholder="Enter user name" name = "username" [(ngModel)] = "newRegistration.username" (ngModelChange)="validatForm()" required><span id="userErrMsg1"></span></TD> </TR>
 			<TR> <TD>Enter password    </TD> 	<TD><input type=password id="upass1"  placeholder="Enter password" name = "password" [(ngModel)] = "newRegistration.password" (ngModelChange) = "check()" required></TD> </TR>
 			<TR> <TD>Re-Enter password </TD>    <TD><input type=password id="upass2" name = "repass" [(ngModel)] ="repass" (ngModelChange) = "check()" required><span></span></TD> </TR>
 			<TR> <TD>Enter email       </TD> 	<TD><input type=email name = "email" [(ngModel)] = "newRegistration.email"  (ngModelChange) = "check()" required></TD> </TR>
