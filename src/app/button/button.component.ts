@@ -2,7 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  template: '<html><head><title> LikeDislike Button</title></head><body> <button class="{{b1Class}}" (click) ="goLike()">{{likeLable}} {{likeCounter}}</button> <button class={{b2Class}} (click) ="goDisLike()">{{dislikeLable}} {{dislikeCounter}}</button> </body> </html>',
+  template: `<html>
+    <head>
+    <title> LikeDislike Button</title>
+    </head>
+    <body> <button class="{{b1Class}}" (click) ="goLike()">{{likeLable}} {{likeCounter}}</button> 
+    <button class={{b2Class}} (click) ="goDisLike()">{{dislikeLable}} {{dislikeCounter}}</button> 
+    </body> 
+    </html>`,
   styles: [
     `
       .Liked {
