@@ -15,6 +15,7 @@ import { HometComponent } from './homet/homet.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CommentsComponent } from './comments/comments.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CommentsComponent } from './comments/comments.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
