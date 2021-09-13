@@ -1,23 +1,12 @@
 <p>comments works!</p>
 <button (click)="loadComments()">Load Comments</button>
-<table>
-    <tr *ngFor="let b of allTheComments">
-        <td>
-           {{ b.postId }}
-        </td>
-        <td>
-            {{b.id}}
-        </td>
-        <td>
-            {{b.name}}
-        </td>
-        <td>
-            {{b.email}}
-        </td>
-        <td>
-            {{b.body}}
-        </td>
-
-    </tr>
-
+<table border=1px>
+<tr *ngFor="let j of allTheComments">
+   
+             <td>{{j.postId}}</td>
+             <td>{{j.id}}</td>
+             <td>{{j.name}}</td>
+             <td>{{j.email}}</td>
+             <td>{{j.body}}</td>        
+</tr>
 </table>

@@ -1,0 +1,12 @@
+<p>comments works!</p>
+<button (click)="loadPhotos()">Load Photos</button>
+<table border=1px>
+<tr *ngFor="let b of allThePhotos">
+   
+             <td>{{b.albumId}}</td>
+             <td>{{b.id}}</td>
+             <td>{{b.title}}</td>
+             <td>{{b.url}}</td>
+             <td>{{b.thumbnailUrl}}</td>        
+</tr>
+</table>

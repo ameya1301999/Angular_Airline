@@ -11,7 +11,7 @@ export class CommentsService {
 
   constructor(private myHTTP: HttpClient) { }
   loadCommentsService() : Observable<MyComment[]>{
-    console.log('Comments service involed');
+    console.log('Comments service involed..');
     return this.myHTTP.get<MyComment[]>(this.commentsURL);
   }
 }

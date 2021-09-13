@@ -16,6 +16,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CommentsComponent } from './comments/comments.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     HometComponent,
     UserDashboardComponent,
     PageNotFoundComponent,
-    CommentsComponent
+    CommentsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
