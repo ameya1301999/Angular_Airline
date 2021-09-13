@@ -14,6 +14,7 @@ import { ButtonComponent } from './button/button.component';
 import { HometComponent } from './homet/homet.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ButtonComponent,
     HometComponent,
     UserDashboardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
