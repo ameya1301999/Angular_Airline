@@ -37,8 +37,8 @@ const routes: Routes = [
   { path : 'showflights', component: ShowFlightsComponent },
   { path : 'login', component: LoginComponent,
     children: [
-      { path : 'forgot', component: ForgotpasswordComponent},
-      { path : 'reset', component: ResetpasswordComponent}
+      { path : 'forgotpassword', component: ForgotpasswordComponent},
+      { path : 'resetpassword', component: ResetpasswordComponent}
     ]
   },
   { path: 'dashboard', component: UserDashboardComponent},

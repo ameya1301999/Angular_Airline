@@ -11,7 +11,9 @@ export class HometComponent implements OnInit {
   constructor(private route: Router) { }
 
   ngOnInit(): void {
-    this.route.navigate(['showflights']);
+  }
+  searchFlight(){
+    this.route.navigate(['showFlights']);
   }
 
 }

@@ -49,7 +49,7 @@
 		<span id="usererrmsg"></span></tr>
 		<tr><td>Enter password <td><td><input type=password id=upass onClick="clearpasserr()" /><td>
 		<span id="passerrmsg"></span></tr>
-		<tr><td><input type=submit value="Login" onclick="return validate()"><td></tr>
+		<TR> <TD><input type=submit value="Login" onclick="return validateLogin()" (click)="dashboard()"></TD> </TR>
 	</table>
 </form>
 	<div id=d1>
@@ -59,7 +59,8 @@
 		<a href="UserRegisteration.html">sign up here</a><br>
 	</div>
 	<div id=d2 class=d>
-		<a href="ForgotPassword.html">Forgot Password</a>
+		<a routerLink="forgotpassword">Forgot Password</a>
 	</div>
+<router-outlet></router-outlet>
 </body>
 </html>
