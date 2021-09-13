@@ -1,6 +1,5 @@
-<p>comments works!</p>
 <button (click)="loadComments()">Load Comments</button>
-<table border=1px>
+<table border=1px *ngIf ="allTheComments && allTheComments.length">
 <tr *ngFor="let j of allTheComments">
    
              <td>{{j.postId}}</td>
@@ -8,5 +7,24 @@
              <td>{{j.name}}</td>
              <td>{{j.email}}</td>
              <td>{{j.body}}</td>        
+</tr>
+</table>
+<hr>
+
+
+<input type=number name="mynum" 
+[(ngModel)]="mynum"> <br>
+<button (click)="loadCommentsById()">
+    Load Single Comment
+</button> 
+<table border=1px *ngIf="singleComment">
+<tr>
+    <td>{{singleComment.postId}}</td>
+    <td>{{singleComment.id}}</td>
+    <td>{{singleComment.name}}</td>
+    <td>{{singleComment.email}}</td>
+    <td>{{singleComment.body}}</td>
+
+
 </tr>
 </table>

@@ -10,6 +10,8 @@ import { MyComment } from './comment';
 export class CommentsComponent implements OnInit {
 
   allTheComments: MyComment[];
+  mynum: number;
+  singleComment: MyComment = new MyComment();
   constructor(private commentsService: CommentsService) { }
 
   ngOnInit(): void {
@@ -22,6 +24,17 @@ export class CommentsComponent implements OnInit {
     .subscribe((data: MyComment[]) =>{
       this.allTheComments = data;
       console.log(this.allTheComments);
+      }, (err) =>{ console.log(err);
+      }
+    );
+  }
+
+  loadCommentsById(){
+    this.commentsService.
+    loadCommentByIdService(this.mynum)
+    .subscribe((data: MyComment) =>{
+      this.singleComment = data;
+      console.log(this.singleComment);
       }, (err) =>{ console.log(err);
       }
     );

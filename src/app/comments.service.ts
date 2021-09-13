@@ -10,8 +10,16 @@ export class CommentsService {
   commentsURL = "https://jsonplaceholder.typicode.com/comments";
 
   constructor(private myHTTP: HttpClient) { }
+  
   loadCommentsService() : Observable<MyComment[]>{
     console.log('Comments service involed..');
     return this.myHTTP.get<MyComment[]>(this.commentsURL);
+  }
+
+  loadCommentByIdService(num: number) : 
+    Observable<MyComment>{
+      console.log('Comments service involed..');
+      return this.myHTTP.get<MyComment>(
+        this.commentsURL+"/"+num);
   }
 }
